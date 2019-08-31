@@ -1,0 +1,156 @@
+html,
+body {
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Cairo', sans-serif;
+}
+
+.main-content>div:first-child {
+  margin: 0;
+}
+
+.appointment-steps {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-items: center;
+  text-align: center;
+}
+
+.appointment-steps h3 {
+  color: #0070cc;
+  margin-top: 1em;
+}
+
+.appointment-steps p {
+  color: #555;
+}
+
+.first-step {
+  background-position: -222px -50px;
+}
+
+.second-step {
+  background-position: -111px -50px;
+}
+
+.third-step {
+  background-position: 0px -50px;
+}
+
+.step-background-image {
+  background-image: url("./imgs/icons-spritesheet.png");
+  display: inline-block;
+  width: 111px;
+  height: 100px;
+}
+
+footer {
+  padding: 2em;
+  background-color: #0070cc;
+  color: #FFF;
+  text-align: right;
+}
+
+.footer-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-wrapper div {
+  width: 100%;
+}
+
+.footer-wrapper>div:first-child {
+  border-bottom: 1px solid #FFF;
+}
+
+.footer-wrapper>div:last-child {
+  margin-top: 1em;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul a {
+  color: #FFF;
+}
+
+ul a:hover {
+  color: #555;
+}
+
+.row img:only-child {
+  width: 60%;
+}
+
+i {
+  font-size: x-large;
+  color: #FFF;
+  margin: .5em;
+}
+
+.privacy-policy {
+  text-align: left;
+}
+
+.privacy-policy ul li {
+  display: inline;
+  padding: .5em;
+}
+
+.country-select {
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  color: #FFF;
+}
+
+form a {
+  color: purple;
+  display: block;
+  margin-top: -15px;
+}
+
+.step-number {
+  font-style: normal;
+  border-radius: 50%;
+  background-color: #0070cc;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin: 0;
+  font-family: 'El Messiri', sans-serif;
+  font-size: .75em;
+}
+
+.one::before {
+  content: "١";
+}
+
+.two::before {
+  content: "٢";
+}
+
+.three::before {
+  content: "٣";
+}
+
+@media(max-width: 992px) {
+  .row img:only-child {
+    width: 30%;
+  }
+}
+
+@media(max-width: 1200px) {
+  .row img:only-child {
+    width: 30%;
+  }
+
+  .footer-wrapper>div:first-child>div:last-child a {
+    float: right;
+    display: inherit;
+  }
+
+}
